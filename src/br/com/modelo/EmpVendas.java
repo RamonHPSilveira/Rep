@@ -5,7 +5,7 @@ package br.com.modelo;
 
 
 public class EmpVendas extends Empresa {
-    
+    private int tipo = 1;
     private String area;
     private double vendas;
     private double val_pedidos;
