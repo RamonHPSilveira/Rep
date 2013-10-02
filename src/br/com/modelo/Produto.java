@@ -4,10 +4,11 @@ package br.com.modelo;
 
 public class Produto {
     private String des_produto;
+    private String area;
     private String nome_prod;
     private double custo;
     private int id_produto;
-    private int id_empresa;
+    private Empresa empresa_prod;
     private String observacoes;
    
 
@@ -46,14 +47,6 @@ public class Produto {
         this.id_produto = id_produto;
     }
 
-    public int getId_empresa() {
-        return id_empresa;
-    }
-
-    public void setId_empresa(int id_empresa) {
-        this.id_empresa = id_empresa;
-    }
-
     public String getObservacoes() {
         return observacoes;
     }
@@ -62,11 +55,21 @@ public class Produto {
         this.observacoes = observacoes;
     }
 
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
     @Override
     public String toString() {
-        return "Produto{" + "des_produto=" + des_produto + ", nome_prod=" + nome_prod + ", custo=" + custo + ", id_produto=" + id_produto + ", id_empresa=" + id_empresa + ", observacoes=" + observacoes + '}';
+        return "Produto{" + "des_produto=" + des_produto + ", area=" + area + ", nome_prod=" + nome_prod + ", custo=" + custo + ", id_produto=" + id_produto + ", empresa_prod=" + empresa_prod + ", observacoes=" + observacoes + '}';
     }
-    
+
+   
+   
     
     
 }
