@@ -9,7 +9,7 @@ public class Empresa {
     private String endereco;
     private String tel_emp;
     private int id_empresa;
-    private int tipo;
+    private int tipo;//fornecedora ou cliente
     private int id_produto;
 
     public int getTipo() {
