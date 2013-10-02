@@ -12,6 +12,7 @@ public class Cliente extends Pessoa{
     private int id_cliente;
     private String compras;
     private String amigo_comum;
+    private int id_empresa;
 
     public String getAmigo_comum() {
         return amigo_comum;

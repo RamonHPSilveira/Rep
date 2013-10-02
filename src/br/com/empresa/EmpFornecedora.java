@@ -1,5 +1,7 @@
+package br.com.empresa;
 
-package br.com.modelo;
+
+
 
 
 public class EmpFornecedora extends Empresa {
