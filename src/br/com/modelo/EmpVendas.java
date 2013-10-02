@@ -2,22 +2,31 @@
 package br.com.modelo;
 
 
-public class EmpVendas {
+public class EmpVendas extends Empresa {
     
-    private int id_produto;
     private String area;
     private double vendas;
     private double val_pedidos;
     private String pedidos;
     private int id_func_responsavel;
     private int id_cliente_responsavel;
+    private String produto_comp;
+    private String produto_interesse;
 
-    public int getId_produto() {
-        return id_produto;
+    public String getProduto_comp() {
+        return produto_comp;
     }
 
-    public void setId_produto(int id_produto) {
-        this.id_produto = id_produto;
+    public void setProduto_comp(String produto_comp) {
+        this.produto_comp = produto_comp;
+    }
+
+    public String getProduto_interesse() {
+        return produto_interesse;
+    }
+
+    public void setProduto_interesse(String produto_interesse) {
+        this.produto_interesse = produto_interesse;
     }
 
     public String getArea() {
@@ -73,8 +82,10 @@ public class EmpVendas {
 
     @Override
     public String toString() {
-        return "EmpVendas{" + "id_produto=" + id_produto + ", area=" + area + ", vendas=" + vendas + ", val_pedidos=" + val_pedidos + ", pedidos=" + pedidos + ", id_func_responsavel=" + id_func_responsavel + ", id_cliente_responsavel=" + id_cliente_responsavel + '}';
+        return "EmpVendas{" + "area=" + area + ", vendas=" + vendas + ", val_pedidos=" + val_pedidos + ", pedidos=" + pedidos + ", id_func_responsavel=" + id_func_responsavel + ", id_cliente_responsavel=" + id_cliente_responsavel + ", produto_comp=" + produto_comp + ", produto_interesse=" + produto_interesse + '}';
     }
+
+   
     
     
 }

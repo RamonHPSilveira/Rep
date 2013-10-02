@@ -12,6 +12,14 @@ public class Cliente extends Pessoa{
     private int id_cliente;
     private String compras;
     private String amigo_comum;
+
+    public String getAmigo_comum() {
+        return amigo_comum;
+    }
+
+    public void setAmigo_comum(String amigo_comum) {
+        this.amigo_comum = amigo_comum;
+    }
     
 
     public Cliente() {
@@ -59,8 +67,10 @@ public class Cliente extends Pessoa{
 
     @Override
     public String toString() {
-        return "Cliente{" + "dt_nascimento=" + dt_nascimento + ", interesses=" + interesses + ", observacoes=" + observacoes + ", id_cliente=" + id_cliente + ", compras=" + compras + '}';
+        return "Cliente{" + "dt_nascimento=" + dt_nascimento + ", interesses=" + interesses + ", observacoes=" + observacoes + ", id_cliente=" + id_cliente + ", compras=" + compras + ", amigo_comum=" + amigo_comum + '}';
     }
+
+    
     
     
 }
