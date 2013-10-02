@@ -4,8 +4,9 @@ package br.com.modelo;
 
 
 
-public class EmpFornecedora extends Empresa {
+public class EmpFornecedora {
     private int tipo = 2;
+    private Empresa empresa;
     private double comissao;
     private int vendas_concluidas;
     private int vendas_planejadas;

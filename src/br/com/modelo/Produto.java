@@ -9,6 +9,7 @@ public class Produto {
     private int id_produto;
     private int id_empresa;
     private String observacoes;
+    private EmpFornecedora emp_fornecedora;
 
     public Produto() {
     }

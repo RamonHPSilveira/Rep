@@ -5,7 +5,7 @@ package br.com.modelo;
 
 
 public class Empresa {
-   
+    private Regiao regiao;
     private String nome_emp;
     private String cnpj;
     private String endereco;
