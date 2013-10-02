@@ -8,7 +8,6 @@ public class Produto {
     private String nome_prod;
     private double custo;
     private int id_produto;
-    private Empresa empresa_prod;
     private String observacoes;
    
 
@@ -65,9 +64,10 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" + "des_produto=" + des_produto + ", area=" + area + ", nome_prod=" + nome_prod + ", custo=" + custo + ", id_produto=" + id_produto + ", empresa_prod=" + empresa_prod + ", observacoes=" + observacoes + '}';
+        return "Produto{" + "des_produto=" + des_produto + ", area=" + area + ", nome_prod=" + nome_prod + ", custo=" + custo + ", id_produto=" + id_produto + ", observacoes=" + observacoes + '}';
     }
 
+   
    
    
     
