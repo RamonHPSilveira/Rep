@@ -6,7 +6,8 @@ public class Produto {
     private String des_produto;
     private String area;
     private String nome_prod;
-    private double custo;
+    private double custo_compra;
+    private double custo_venda;
     private int id_produto;
     private String observacoes;
    
