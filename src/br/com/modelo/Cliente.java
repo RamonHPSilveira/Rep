@@ -13,7 +13,7 @@ public class Cliente extends Pessoa{
     private Vendas vendas;                          // compras feitas por ele
     private Amigos amigo_comum;                    // amigos que possui em comumou, contatos de efeito, ou contatos dentro da empresa
     private Empresa empresa;                      // empresa que o cliente trabalha
-    private Pedidos pedido_em_acao;               // pedidos em acao
+ 
             
             
     public Amigos getAmigo_comum() {
@@ -24,17 +24,6 @@ public class Cliente extends Pessoa{
         this.amigo_comum = amigo_comum;
     }
 
-    public Pedidos getPedido_em_acao() {
-        return pedido_em_acao;
-    }
-
-    public void setPedido_em_acao(Pedidos pedido_em_acao) {
-        this.pedido_em_acao = pedido_em_acao;
-    }
-
-  
-
-   
 
     public Cliente() {
     }
@@ -89,9 +78,10 @@ public class Cliente extends Pessoa{
 
     @Override
     public String toString() {
-        return "Cliente{" + "dt_nascimento=" + dt_nascimento + ", interesses=" + interesses + ", observacoes=" + observacoes + ", id_cliente=" + id_cliente + ", vendas=" + vendas + ", amigo_comum=" + amigo_comum + ", empresa=" + empresa + ", pedido_em_acao=" + pedido_em_acao + '}';
+        return "Cliente{" + "dt_nascimento=" + dt_nascimento + ", interesses=" + interesses + ", observacoes=" + observacoes + ", id_cliente=" + id_cliente + ", vendas=" + vendas + ", amigo_comum=" + amigo_comum + ", empresa=" + empresa + '}';
     }
 
+  
  
 
 }

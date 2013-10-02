@@ -13,7 +13,6 @@ public class Funcionario extends Pessoa{
     private Date dt_adm;                   // data de admissao
     private Regiao regiao;                // regiao
     private double comissao;             // porcentagem sobre as vendas
-    private Pedidos pedidos;             // pedidos em acao
     
     public double getComissao() {
         return comissao;
@@ -25,14 +24,6 @@ public class Funcionario extends Pessoa{
 
     public Regiao getRegiao() {
         return regiao;
-    }
-
-    public Pedidos getPedidos() {
-        return pedidos;
-    }
-
-    public void setPedidos(Pedidos pedidos) {
-        this.pedidos = pedidos;
     }
 
     public void setRegiao(Regiao regiao) {
@@ -92,8 +83,7 @@ public class Funcionario extends Pessoa{
 
     @Override
     public String toString() {
-        return "Funcionario{" + "id=" + id + ", salario=" + salario + ", cdt=" + cdt + ", observacao=" + observacao + ", funcao=" + funcao + ", dt_adm=" + dt_adm + ", regiao=" + regiao + ", comissao=" + comissao + ", pedidos=" + pedidos + '}';
+        return "Funcionario{" + "id=" + id + ", salario=" + salario + ", cdt=" + cdt + ", observacao=" + observacao + ", funcao=" + funcao + ", dt_adm=" + dt_adm + ", regiao=" + regiao + ", comissao=" + comissao + '}';
     }
 
-  
 }
