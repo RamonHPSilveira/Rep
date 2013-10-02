@@ -6,22 +6,35 @@ import java.util.Date;
 
 public class Cliente extends Pessoa{
    
-    private Date dt_nascimento;
-    private String interesses;
-    private String observacoes;
-    private int id_cliente;
-    private String compras;
-    private String amigo_comum;
-    private Empresa empresa;
-
-    public String getAmigo_comum() {
-        return amigo_comum;
+    private Date dt_nascimento;                         // data nascimento
+    private String interesses;                         // o que o cliente gosta
+    private String observacoes;                       // observacoes sobre ele
+    private int id_cliente;                          // codigo do cliente
+    private Vendas vendas;                          // compras feitas por ele
+    private Amigos amigo_comum;                    // amigos que possui em comumou, contatos de efeito, ou contatos dentro da empresa
+    private Empresa empresa;                      // empresa que o cliente trabalha
+    private Pedidos pedido_em_acao;               // pedidos em acao
+            
+            
+    public Amigos getAmigo_comum() {
+        return amigo_comum;                         
     }
 
-    public void setAmigo_comum(String amigo_comum) {
+    public void setAmigo_comum(Amigos amigo_comum) {
         this.amigo_comum = amigo_comum;
     }
-    
+
+    public Pedidos getPedido_em_acao() {
+        return pedido_em_acao;
+    }
+
+    public void setPedido_em_acao(Pedidos pedido_em_acao) {
+        this.pedido_em_acao = pedido_em_acao;
+    }
+
+  
+
+   
 
     public Cliente() {
     }
@@ -58,20 +71,27 @@ public class Cliente extends Pessoa{
         this.id_cliente = id_cliente;
     }
 
-    public String getCompras() {
-        return compras;
+    public Vendas getVendas() {
+        return vendas;
     }
 
-    public void setCompras(String compras) {
-        this.compras = compras;
+    public void setVendas(Vendas vendas) {
+        this.vendas = vendas;
+    }
+
+    public Empresa getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 
     @Override
     public String toString() {
-        return "Cliente{" + "dt_nascimento=" + dt_nascimento + ", interesses=" + interesses + ", observacoes=" + observacoes + ", id_cliente=" + id_cliente + ", compras=" + compras + ", amigo_comum=" + amigo_comum + '}';
+        return "Cliente{" + "dt_nascimento=" + dt_nascimento + ", interesses=" + interesses + ", observacoes=" + observacoes + ", id_cliente=" + id_cliente + ", vendas=" + vendas + ", amigo_comum=" + amigo_comum + ", empresa=" + empresa + ", pedido_em_acao=" + pedido_em_acao + '}';
     }
 
-    
-    
-    
+ 
+
 }

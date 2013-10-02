@@ -3,10 +3,10 @@ package br.com.modelo;
 
 
 public class Pessoa {
-    private String nome;
-    private int idade;
-    private String rg;
-    private String cpf;
+    private String nome;                
+    private int idade;                 
+    private String rg;                
+    private String cpf;             
     private String telefone;
     private String email;
     private String sexo;

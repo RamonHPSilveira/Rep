@@ -5,8 +5,8 @@ package br.com.modelo;
 
 
 public class EmpVendas  {
-    private Empresa empresa;
-    private String produto_interesse;
+    private Empresa empresa;                // empresa
+    private String produto_interesse;      // produtos que podem interessa-la
 
     public String getProduto_interesse() {
         return produto_interesse;

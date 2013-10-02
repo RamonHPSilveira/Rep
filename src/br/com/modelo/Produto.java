@@ -3,16 +3,24 @@ package br.com.modelo;
 
 
 public class Produto {
-    private String des_produto;
-    private String area;
-    private String nome_prod;
-    private double custo_compra;
-    private double custo_venda;
-    private int id_produto;
-    private String observacoes;
+    private String des_produto;             // descricao
+    private String area;                   // area que pode atuar o produto 
+    private String nome_prod;             // nome comercial  
+    private double custo_compra;         // custo que o fornecedor cobra
+    private double custo_venda;         // custo que sera imposto ao cliente
+    private int id_produto;            // codigo do produto
+    private String observacoes;       // observacoes
+    private String nome_original;    // nome original
    
 
     public Produto() {
+    }
+     public String getNome_original() {
+        return nome_original;
+    }
+
+    public void setNome_original(String nome_original) {
+        this.nome_original = nome_original;
     }
 
     public String getDes_produto() {
@@ -31,13 +39,6 @@ public class Produto {
         this.nome_prod = nome_prod;
     }
 
-    public double getCusto() {
-        return custo;
-    }
-
-    public void setCusto(double custo) {
-        this.custo = custo;
-    }
 
     public int getId_produto() {
         return id_produto;
@@ -63,14 +64,27 @@ public class Produto {
         this.area = area;
     }
 
-    @Override
-    public String toString() {
-        return "Produto{" + "des_produto=" + des_produto + ", area=" + area + ", nome_prod=" + nome_prod + ", custo=" + custo + ", id_produto=" + id_produto + ", observacoes=" + observacoes + '}';
+    public double getCusto_compra() {
+        return custo_compra;
     }
 
-   
-   
-   
+    public void setCusto_compra(double custo_compra) {
+        this.custo_compra = custo_compra;
+    }
+
+    public double getCusto_venda() {
+        return custo_venda;
+    }
+
+    public void setCusto_venda(double custo_venda) {
+        this.custo_venda = custo_venda;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" + "des_produto=" + des_produto + ", area=" + area + ", nome_prod=" + nome_prod + ", custo_compra=" + custo_compra + ", custo_venda=" + custo_venda + ", id_produto=" + id_produto + ", observacoes=" + observacoes + ", nome_original=" + nome_original + '}';
+    }
+
     
-    
+ 
 }

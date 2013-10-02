@@ -3,9 +3,9 @@ package br.com.modelo;
 
 
 public class Regiao {
-    private int id_regiao;
-    private String observacoes;
-    private String nome_regiao;
+    private int id_regiao;              // codigo da regiao
+    private String observacoes;        // observacao
+    private String nome_regiao;       // nome da regiao
 
     public Regiao() {
     }

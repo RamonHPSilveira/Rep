@@ -5,13 +5,14 @@ package br.com.modelo;
 
 
 public class Empresa {
-    private Regiao regiao;
-    private String nome_emp;
-    private String cnpj;
-    private String endereco;
-    private String tel_emp;
-    private int id_empresa;
-    private int tipo;//fornecedora1 ou cliente2
+    private Regiao regiao;                              // regiao em que possui sedes ou representacoes
+    private String nome_emp;                           // nome da empresa
+    private String cnpj;                              //cnpj
+    private String endereco;                         // endereco
+    private String tel_emp;                         // telefone da empresa
+    private int id_empresa;                        // codigo da empresa
+    private int tipo;                             //fornecedora->1 ou cliente->2
+    private String area_de_atuacao;              // area em que atua, tipos de produtos
 
     public int getTipo() {
         return tipo;

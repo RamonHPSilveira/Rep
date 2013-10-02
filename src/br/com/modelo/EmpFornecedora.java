@@ -6,9 +6,9 @@ package br.com.modelo;
 
 public class EmpFornecedora {
     
-    private Empresa empresa;
-    private double comissao;
-    private Produto produto;
+    private Empresa empresa;        // empresa fornecedora, "socia"
+    private double comissao;       // comissao fornecida por ela
+    private Produto produto;      // produtos fornecidos
     
     
     public EmpFornecedora() {

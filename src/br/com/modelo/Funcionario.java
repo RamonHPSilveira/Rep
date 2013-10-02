@@ -5,16 +5,34 @@ import java.util.Date;
 
 
 public class Funcionario extends Pessoa{
-    private int id;
-    private double salario;
-    private String cdt;
-    private String observacao;
-    private String funcao;
-    private Date dt_adm;
-    private Regiao regiao;
+    private int id;                             // codgigo do funcionario
+    private double salario;                    // salario pago mensalmente
+    private String cdt;                       // carteira de trabalho
+    private String observacao;               // observacao sobre ele ou condicoes de contrato
+    private String funcao;                  // funco do funcionario
+    private Date dt_adm;                   // data de admissao
+    private Regiao regiao;                // regiao
+    private double comissao;             // porcentagem sobre as vendas
+    private Pedidos pedidos;             // pedidos em acao
+    
+    public double getComissao() {
+        return comissao;
+    }
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
+    }
 
     public Regiao getRegiao() {
         return regiao;
+    }
+
+    public Pedidos getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(Pedidos pedidos) {
+        this.pedidos = pedidos;
     }
 
     public void setRegiao(Regiao regiao) {
@@ -74,9 +92,8 @@ public class Funcionario extends Pessoa{
 
     @Override
     public String toString() {
-        return "Funcionario{" + "id=" + id + ", salario=" + salario + ", cdt=" + cdt + ", observacao=" + observacao + ", funcao=" + funcao + ", dt_adm=" + dt_adm + ", regiao=" + regiao + '}';
+        return "Funcionario{" + "id=" + id + ", salario=" + salario + ", cdt=" + cdt + ", observacao=" + observacao + ", funcao=" + funcao + ", dt_adm=" + dt_adm + ", regiao=" + regiao + ", comissao=" + comissao + ", pedidos=" + pedidos + '}';
     }
 
-    
-    
+  
 }
