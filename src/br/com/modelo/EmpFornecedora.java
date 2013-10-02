@@ -5,13 +5,12 @@ package br.com.modelo;
 
 
 public class EmpFornecedora {
-    private int tipo = 2;
+    
     private Empresa empresa;
     private double comissao;
-    private int vendas_concluidas;
-    private int vendas_planejadas;
-    private String descricao_produto;
-
+    private Produto produto;
+    
+    
     public EmpFornecedora() {
     }
 
@@ -23,37 +22,31 @@ public class EmpFornecedora {
         this.comissao = comissao;
     }
 
-   
 
-    public String getDescricao_produto() {
-        return descricao_produto;
+    public Empresa getEmpresa() {
+        return empresa;
     }
 
-    public void setDescricao_produto(String descricao_produto) {
-        this.descricao_produto = descricao_produto;
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 
-    public int getVendas_concluidas() {
-        return vendas_concluidas;
+    public Produto getProduto() {
+        return produto;
     }
 
-    public void setVendas_concluidas(int vendas_concluidas) {
-        this.vendas_concluidas = vendas_concluidas;
-    }
-
-    public int getVendas_planejadas() {
-        return vendas_planejadas;
-    }
-
-    public void setVendas_planejadas(int vendas_planejadas) {
-        this.vendas_planejadas = vendas_planejadas;
+    public void setProduto(Produto produto) {
+        this.produto = produto;
     }
 
     @Override
     public String toString() {
-        return "EmpFornecedora{" + "comissao=" + comissao + ", vendas_concluidas=" + vendas_concluidas + ", vendas_planejadas=" + vendas_planejadas + ", descricao_produto=" + descricao_produto + '}';
+        return "EmpFornecedora{" + "empresa=" + empresa + ", comissao=" + comissao + ", produto=" + produto + '}';
     }
 
+   
+
+   
    
 
    

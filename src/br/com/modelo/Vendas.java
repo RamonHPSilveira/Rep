@@ -9,5 +9,5 @@ public class Vendas {
     private int id_func_responsavel;
     private int id_cliente_responsavel;
     private String produto_comp;
-    private String produto_interesse;
+   
 }

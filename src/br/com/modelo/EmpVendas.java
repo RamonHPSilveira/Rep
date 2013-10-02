@@ -5,10 +5,17 @@ package br.com.modelo;
 
 
 public class EmpVendas  {
-    private int tipo = 1;
     private Empresa empresa;
     private String area;
-   
+    private String produto_interesse;
+
+    public String getProduto_interesse() {
+        return produto_interesse;
+    }
+
+    public void setProduto_interesse(String produto_interesse) {
+        this.produto_interesse = produto_interesse;
+    }
     
 
    
@@ -20,13 +27,7 @@ public class EmpVendas  {
         this.area = area;
     }
 
-    public int getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
+  
 
     public Empresa getEmpresa() {
         return empresa;
@@ -41,8 +42,12 @@ public class EmpVendas  {
 
     @Override
     public String toString() {
-        return "EmpVendas{" + "tipo=" + tipo + ", empresa=" + empresa + ", area=" + area + '}';
+        return "EmpVendas{" + "empresa=" + empresa + ", area=" + area + ", produto_interesse=" + produto_interesse + '}';
     }
+
+    
+
+    
 
   
    
