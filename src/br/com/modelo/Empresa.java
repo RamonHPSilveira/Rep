@@ -12,7 +12,6 @@ public class Empresa {
     private String tel_emp;
     private int id_empresa;
     private int tipo;//fornecedora1 ou cliente2
-    private int id_produto;
 
     public int getTipo() {
         return tipo;

@@ -11,6 +11,15 @@ public class Funcionario extends Pessoa{
     private String observacao;
     private String funcao;
     private Date dt_adm;
+    private Regiao regiao;
+
+    public Regiao getRegiao() {
+        return regiao;
+    }
+
+    public void setRegiao(Regiao regiao) {
+        this.regiao = regiao;
+    }
 
     public int getId() {
         return id;
@@ -65,8 +74,9 @@ public class Funcionario extends Pessoa{
 
     @Override
     public String toString() {
-        return "Funcionario{" + "id=" + id + ", salario=" + salario + ", cdt=" + cdt + ", observacao=" + observacao + ", funcao=" + funcao + ", dt_adm=" + dt_adm + '}';
+        return "Funcionario{" + "id=" + id + ", salario=" + salario + ", cdt=" + cdt + ", observacao=" + observacao + ", funcao=" + funcao + ", dt_adm=" + dt_adm + ", regiao=" + regiao + '}';
     }
+
     
     
 }
