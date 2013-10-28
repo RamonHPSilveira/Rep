@@ -21,7 +21,7 @@ public class ConnectionFactory {
     private static final String PASSWORD ="";
     
 // Abre a Conexao com o banco
-    public static Connection getConection(){
+    public static Connection getConnection(){
         try {
             return DriverManager.getConnection(STR_CONEXAO+DATA_BASE,USER,PASSWORD);
         } catch (SQLException ex) {
