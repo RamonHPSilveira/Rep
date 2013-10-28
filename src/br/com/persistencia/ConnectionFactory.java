@@ -11,13 +11,13 @@ import javax.swing.JOptionPane;
 
 
 public class ConnectionFactory {
-    
+    //String de conexao
     private static final String STR_CONEXAO ="jdbc:mysql://localhost:3306/";
-    
+    //Nome do banco de datos
     private static final String DATA_BASE = "representacao";
-    
+    //Usuario do MySql
     private static final String USER ="root";
-    
+    //senha do MySql
     private static final String PASSWORD ="";
     
 // Abre a Conexao com o banco
